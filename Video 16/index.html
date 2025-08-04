@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class selectors */
+        .red {
+            background-color: red;
+        }
+
+        /* Id selector */
+        #blue {
+            background-color: blue;
+        }
+
+        /* child selector */
+        div>p {
+            color: blueviolet;
+            background-color: yellow;
+        }
+
+        /* Descendant selector */
+        div p {
+            color: blueviolet;
+            background-color: yellow;
+        }
+
+        /* Universal Selector */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: red;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: aqua;
+        }
+        a:hover{
+            background-color: greenyellow;
+        }
+        p:first-child{
+          background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        I am the one
+    </div>
+    <div class="red">
+        Lorem ipsum dolor sit amet.
+        <p>I am para inside the div</p>
+    </div>
+    <div id="blue">
+        Lorem ipsum dolor sit amet consectetur.
+        <main>
+            <p>Your inside main</p>
+        </main>
+    </div>
+    <div>
+        <a href="http://www.google.com">Go to Google</a>
+        <a href="http://www.facebook.com">Go to FaceBook</a>
+    </div>
+</body>
+
+</html>

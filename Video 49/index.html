@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container {
+            height: 455px;
+            width: 580px;
+            border: 3px solid blue;
+            background-image: url(https://images.unsplash.com/photo-1536427824649-fbf2e4a33d40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtYWxsfGVufDB8fDB8fHww);
+            /* background-image: url(https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg); */
+            background-position: right center;
+            /* correct version of object-position */
+            background-size: cover;
+            /* or 'contain' or '100% 100%' depending on your goal */
+            /* background-repeat: no-repeat; */
+        }
+
+
+        img {
+            height: 455px;
+            width: 580px;
+            /* object-fit: cover; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            /* object-position: bottom right; */
+            /* object-position: 10px 20px; */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>

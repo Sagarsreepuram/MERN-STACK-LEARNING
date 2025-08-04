@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flex</title>
+    <style>
+        .container{
+           display: flex;
+           height: 30vh;
+           border: 3px solid red;
+           justify-content: center;
+           align-items: center;
+           /* I will change direction from top to bottom */
+           flex-direction: column-reverse;
+           /* If the it overflow we can adjust it with wrap */
+           flex-wrap: wrap;
+           /* to adjust the data inside the border */
+           align-content: end;
+           /* we can also define row and column gap */
+           gap: 50px;
+        }
+        .items{
+            height: 25px;
+            width: 30px;
+            background-color: blueviolet;
+            border: 3px solid black;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+    </div>
+</body>
+</html>

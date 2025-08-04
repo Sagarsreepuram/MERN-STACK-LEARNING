@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and (orientation: portrait){
+            body{
+               border: 5px solid green;
+        }
+        }
+        /*  @media only screen and (max-width: 500px) we can min also */
+        @media only screen and (max-width: 500px){
+            body{
+            background-color: blue;
+        }
+        /* When u want to see in small phone u can observe inspect and see */
+        .boxes{
+            flex-direction: column;
+        }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            height:100px;
+            width: 100px;
+            margin: 30px ;
+            padding: 10px 20px;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am red Body guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

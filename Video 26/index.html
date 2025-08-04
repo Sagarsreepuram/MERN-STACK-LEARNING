@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            /* overflow: scroll; */
+            /* overflow: hidden;  /*Both are same*//*overflow: clip; */
+            overflow: auto;
+            /* text-overflow: ellipsis;
+            white-space: nowrap; */
+            overflow-y: scroll; 
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a Good Boy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, alias. Accusamus, quia
+        voluptatibus vitae cum sint doloremque, unde eum doloribus inventore, iusto veniam sunt impedit nihil. Modi sint
+        veniam perferendis consequatur error accusamus ipsam maxime. Eveniet alias delectus culpa iure, officia sunt
+        expedita earum debitis facilis in suscipit.
+    </div>
+</body>
+
+</html>

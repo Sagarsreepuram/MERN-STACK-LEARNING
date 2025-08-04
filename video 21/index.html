@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity and Cascade</title>
+    <!-- This happens due to Cascade Specificity -->
+    <style>
+        /* The Specificity of this selector is 1  */
+        div{
+            color: red;
+        }
+        /* The Specificity of this selector is 10  */
+        .first{
+            color: green;
+        }
+        /* The Specificity of this selector is 10  */
+        .second{
+            color: aqua;
+        }
+        /* The Specificity of this selector is 10  */
+        .third{
+            color: brown!important;
+        }
+        /* /* The Specificity of this selector is 10  */
+        /* [data-x="a"]{
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: aqua;" data-x="a"   class="first second third">Css Specificity</h1>
+    </div>
+</body>
+</html>

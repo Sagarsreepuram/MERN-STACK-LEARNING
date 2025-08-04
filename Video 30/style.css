@@ -1,0 +1,35 @@
+/*Global Variable css variables can use any where in the css using var function */
+/* Not only color we can give padding any default words and use in the code like padding margin*/
+:root {
+    --seccolor: rgb(128, 128, 159);
+    --color: rgb(112, 112, 190);
+    --margin:0;
+  } 
+  
+*{
+    margin: var(--margin);
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: var(--color);
+}
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 30px;
+}
+
+/* Local variable if we don't have a color variable it wil use the default color green */
+ul li:first-child{
+    --color: rgb(251, 209, 164);
+    background-color:var(--color, green);
+}
+
+.container{
+    background-color: var(--seccolor);
+  }
+  
